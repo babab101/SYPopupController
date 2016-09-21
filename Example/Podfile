@@ -2,7 +2,8 @@ use_frameworks!
 
 target 'SYPopupController_Example' do
   pod 'SYPopupController', :path => '../'
-
+  pod 'HexColors'
+  
   target 'SYPopupController_Tests' do
     inherit! :search_paths
 

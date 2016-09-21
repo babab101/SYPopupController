@@ -1,0 +1,6 @@
+framework module Pods_SYPopupController_Example {
+  umbrella header "Pods-SYPopupController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

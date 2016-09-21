@@ -1,0 +1,22 @@
+{
+  "name": "SYPopupController",
+  "version": "0.1.0",
+  "summary": "SYPopupController is Alert/SelectPopup/MultiSelectPopup.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SYPopupController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ahn soo yeol": "sooyeol.ahn@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SYPopupController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "SYPopupController/Classes/**/*"
+}

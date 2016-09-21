@@ -1,0 +1,6 @@
+framework module SYPopupController {
+  umbrella header "SYPopupController-umbrella.h"
+
+  export *
+  module * { export * }
+}
