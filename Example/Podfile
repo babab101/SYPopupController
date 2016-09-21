@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SYPopupController_Example' do
+  pod 'SYPopupController', :path => '../'
+
+  target 'SYPopupController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
