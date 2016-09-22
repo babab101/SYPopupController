@@ -1,19 +1,16 @@
 PODS:
   - HexColors (4.0.0)
-  - SYPopupController (0.1.0)
+  - SYPopupController (0.1.0):
+    - HexColors
 
 DEPENDENCIES:
   - HexColors
-  - SYPopupController (from `../`)
-
-EXTERNAL SOURCES:
-  SYPopupController:
-    :path: ../
+  - SYPopupController
 
 SPEC CHECKSUMS:
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
-  SYPopupController: d4bb8517081fec664b4e1a2eefce7e2e354b7277
+  SYPopupController: 564295be92f7b35fb06308722748eb81d5f9e77d
 
-PODFILE CHECKSUM: f5789e18b69911bbbe625eeb681a2fe59b83b508
+PODFILE CHECKSUM: 120621e4fbc9c89ec04294e9a4fa9a2af3a02ac5
 
 COCOAPODS: 1.0.1

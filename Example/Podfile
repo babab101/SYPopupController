@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'SYPopupController_Example' do
-  pod 'SYPopupController', :path => '../'
+  pod 'SYPopupController'
   pod 'HexColors'
   
   target 'SYPopupController_Tests' do

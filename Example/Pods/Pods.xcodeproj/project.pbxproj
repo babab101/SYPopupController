@@ -7,30 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19E25CF573189241AECB6DF2825FD8B9 /* SelectPopupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1FC8A1092B9946D7C718378130E6C0 /* SelectPopupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26CA1A0D1B9166DD2691AB385A8A921D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1B152CA5D2837A0F8834F70855721C07 /* SYPopupController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3371CDD2E25338E5579F9EAE62FD /* SYPopupController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26CA1A0D1B9166DD2691AB385A8A921D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6738A478FE941B7C80E95ACEB4217A /* Foundation.framework */; };
 		36DEDD073B769EE4881291C8992A94F4 /* Pods-SYPopupController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C8F75796AE77ECABC7EF7087CA0930 /* Pods-SYPopupController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37777F2C3B88E2AB4E2B8E8133E9055B /* MessagePopupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE4F25DDD83325E983060DABCBBB5D1 /* MessagePopupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E5B4EEA50BEF0B4D0FE2394D3EB119A /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C744C065C4619184B9421F410F1F62 /* HexColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B261CBE52B280E1C38D899AD464D39F /* SYPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D4057BA8E38DEED23F3ABE1D658490 /* SYPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5B4EEA50BEF0B4D0FE2394D3EB119A /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC6F0BFCE4EA0453E85722E6030FF7 /* HexColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		587F9B71606DDD977152BADA9401DD3E /* Pods-SYPopupController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD699FBAAC84043AEB676A20A27AECF7 /* Pods-SYPopupController_Example-dummy.m */; };
-		596758BBEC68789E6C8928ECE3FC341C /* HexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC04C44AD4D4CFA90FB7A875193517A /* HexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		605962323999E299463B562968A46899 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		596758BBEC68789E6C8928ECE3FC341C /* HexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1D76FCE995B09DDFA1BC88CC3A846D /* HexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		605962323999E299463B562968A46899 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6738A478FE941B7C80E95ACEB4217A /* Foundation.framework */; };
 		7A3439BC005031A6AD6C6B71A8BC6BF8 /* Pods-SYPopupController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FF7FA4D0108C73B0B102551200FA41 /* Pods-SYPopupController_Tests-dummy.m */; };
-		83B99A86A9693FD42245892A0B25B030 /* SYPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF768A137A28242E557134B371141B5 /* SYPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		858AF9FCB28937EA49FDA34CBE199DD3 /* SYPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F4552CE3B495E78B250C1E7FD8DA6C /* SYPopupController.m */; };
-		870B2234088D350705E1180DBE0863FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		8DCF5C0EE6AC7543935C51AA756864C0 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D946C8B7CBCA93373729CA458161617E /* HexColors-dummy.m */; };
-		91890474D5ECA39155954648216384BD /* SYPopupController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E595F3A08DAF8A812F678385A07ECCB /* SYPopupController-dummy.m */; };
-		AD4C0107EFD6CFBC51EDD393C3D7024E /* SelectPopupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60564E8EFE877030355B955DCEDEFF4A /* SelectPopupCell.m */; };
-		BDEB11904F853157FB00D0B3857B20CA /* MessagePopupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC730BA015C027D73CB68437BB2202E7 /* MessagePopupCell.m */; };
+		890AD4BF248A592D2FA9D11CD366C0BD /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED95C9854C5A1E9D1863834AA6302259 /* HexColors.framework */; };
+		8917A4D36419583D3B3085D8726A8DB2 /* MessagePopupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DF76520778E5F7625017A3BB321275BE /* MessagePopupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA6383FF1A196313C447CB74D967ED8 /* SelectPopupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E8E0F01AD02BDEE59A27900032305 /* SelectPopupCell.m */; };
+		8BB13CC1ED007C1AC44530643F7883BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6738A478FE941B7C80E95ACEB4217A /* Foundation.framework */; };
+		8DCF5C0EE6AC7543935C51AA756864C0 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83417D5FEABEE8B2B5D09247F928011A /* HexColors-dummy.m */; };
+		AE86C263C8FB573E35F88C1F2AC962F0 /* SYPopupController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C00D8DEE005BDACA65C8BB837E183FC0 /* SYPopupController-dummy.m */; };
+		B2D45FE0F40F9E143615717E6D602C32 /* MessagePopupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11323E8737F23A2E10A0986E45242F2E /* MessagePopupCell.m */; };
 		C89D22853BD2BB2E6C3980941FB614B5 /* Pods-SYPopupController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 958DECEDDD40902AADE8E1491B9B7473 /* Pods-SYPopupController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1E92AEC9F093E10C69F2B89A14F49F5 /* HexColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A5E59DFA5A6537C1492E09F7EED969 /* HexColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E46464ECEAF459AEAA999FBE85905098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		E60F573007C3DC8D52D4BF2A1E2F5EDC /* SYPopupController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A91BB6B06B357D789CCCA33088A67FC1 /* SYPopupController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E92AEC9F093E10C69F2B89A14F49F5 /* HexColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C807A5C7D3DD4D9808B51F45F7363BA /* HexColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE50F5B36A803289EF41A4874D18186F /* SYPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1594A40E12712A53EAC4228DD72735F9 /* SYPopupController.m */; };
+		E46464ECEAF459AEAA999FBE85905098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6738A478FE941B7C80E95ACEB4217A /* Foundation.framework */; };
+		FE4B74081741F9D4A8F843615A9257FB /* SelectPopupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C96251EE326488141529672C94201812 /* SelectPopupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		18F9DA505B56BD4E3A16850E8C6B2640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C408D4E183A88B763793C217A66A1950;
+			remoteInfo = HexColors;
+		};
+		45E929DEF9A2C7A8FA9D45024931EFE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -48,54 +56,64 @@
 
 /* Begin PBXFileReference section */
 		0BD168D2D754010473677AD6816D7583 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6738A478FE941B7C80E95ACEB4217A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0F6534E522612DCBAA061E89B87E384E /* Pods_SYPopupController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYPopupController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12C34EBCA61D298D1CED29711FB6FC82 /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
-		1E595F3A08DAF8A812F678385A07ECCB /* SYPopupController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SYPopupController-dummy.m"; sourceTree = "<group>"; };
+		11323E8737F23A2E10A0986E45242F2E /* MessagePopupCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MessagePopupCell.m; path = SYPopupController/Classes/MessagePopupCell.m; sourceTree = "<group>"; };
+		1594A40E12712A53EAC4228DD72735F9 /* SYPopupController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SYPopupController.m; path = SYPopupController/Classes/SYPopupController.m; sourceTree = "<group>"; };
+		1D0CAA4C648F6E597F021CD7508C3EF4 /* SYPopupController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SYPopupController.modulemap; sourceTree = "<group>"; };
+		209E3371CDD2E25338E5579F9EAE62FD /* SYPopupController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYPopupController-umbrella.h"; sourceTree = "<group>"; };
 		248F685C85E3D41DE76FE335AEE5AA87 /* SYPopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYPopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25C744C065C4619184B9421F410F1F62 /* HexColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = Classes/HexColors.m; sourceTree = "<group>"; };
 		2760CA107F525A6E166EB26D2D0F066E /* Pods-SYPopupController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SYPopupController_Tests.modulemap"; sourceTree = "<group>"; };
+		32D4057BA8E38DEED23F3ABE1D658490 /* SYPopupController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SYPopupController.h; path = SYPopupController/Classes/SYPopupController.h; sourceTree = "<group>"; };
 		354A69C5F77E110AC2D5EDFEDF66EC44 /* Pods-SYPopupController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYPopupController_Tests-resources.sh"; sourceTree = "<group>"; };
 		380EA7AB392292184EA88D50C5D627BF /* Pods-SYPopupController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYPopupController_Example-resources.sh"; sourceTree = "<group>"; };
 		39C8F75796AE77ECABC7EF7087CA0930 /* Pods-SYPopupController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYPopupController_Example-umbrella.h"; sourceTree = "<group>"; };
-		3DBBEFCE306744B5E840D9E8250320F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B1FC8A1092B9946D7C718378130E6C0 /* SelectPopupCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SelectPopupCell.h; sourceTree = "<group>"; };
-		4BC04C44AD4D4CFA90FB7A875193517A /* HexColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = Classes/HexColors.h; sourceTree = "<group>"; };
-		4C444250C112AE0ABE2B20180F7D0C6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E553C46940C8122D3F4A9CB32442462 /* HexColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HexColors.modulemap; sourceTree = "<group>"; };
+		39D126E82505FF540D333979B41BD981 /* SYPopupController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYPopupController.xcconfig; sourceTree = "<group>"; };
 		533B374E7EE4A0DBCC28B631F0CC6926 /* Pods-SYPopupController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SYPopupController_Example.modulemap"; sourceTree = "<group>"; };
-		53A5E59DFA5A6537C1492E09F7EED969 /* HexColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-umbrella.h"; sourceTree = "<group>"; };
-		60564E8EFE877030355B955DCEDEFF4A /* SelectPopupCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SelectPopupCell.m; sourceTree = "<group>"; };
 		64D20417E825E044554BF9D3D077E48C /* Pods-SYPopupController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYPopupController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C807A5C7D3DD4D9808B51F45F7363BA /* HexColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-umbrella.h"; sourceTree = "<group>"; };
+		83417D5FEABEE8B2B5D09247F928011A /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
 		86281AADBF71C7814B4D21A5A78E6957 /* Pods-SYPopupController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYPopupController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8633BAB8B09D2A8E95EEC3A70229A59C /* Pods_SYPopupController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYPopupController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891B0450394A34E25AF66916BD439448 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E72368B91FD7AFB84B0E92A6A2D9246 /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
 		8F7B2180EF16562B78B7BF1C5D899D38 /* Pods-SYPopupController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYPopupController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		91B620105895F0FED34A86CCCA878EBB /* Pods-SYPopupController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYPopupController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		958DECEDDD40902AADE8E1491B9B7473 /* Pods-SYPopupController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYPopupController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9EF768A137A28242E557134B371141B5 /* SYPopupController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SYPopupController.h; sourceTree = "<group>"; };
-		9FD1E7588B58E930C5C4E95C928600B3 /* SYPopupController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYPopupController-prefix.pch"; sourceTree = "<group>"; };
-		A91BB6B06B357D789CCCA33088A67FC1 /* SYPopupController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYPopupController-umbrella.h"; sourceTree = "<group>"; };
+		9A1D76FCE995B09DDFA1BC88CC3A846D /* HexColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = Classes/HexColors.h; sourceTree = "<group>"; };
+		A4BC6F0BFCE4EA0453E85722E6030FF7 /* HexColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = Classes/HexColors.m; sourceTree = "<group>"; };
 		A976D54F0DAC6D3E461CE40D92437B13 /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B296EF6ED193760C3BBF77363F9A065E /* SYPopupController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SYPopupController.modulemap; sourceTree = "<group>"; };
+		B748E3FDD88080371A7853C509A0D2E6 /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
 		B7FF7FA4D0108C73B0B102551200FA41 /* Pods-SYPopupController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYPopupController_Tests-dummy.m"; sourceTree = "<group>"; };
 		B9D01E2264CBCC68F6A3FD4F4B6F1E64 /* Pods-SYPopupController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYPopupController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C00D8DEE005BDACA65C8BB837E183FC0 /* SYPopupController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SYPopupController-dummy.m"; sourceTree = "<group>"; };
 		C1AEA98E4DA6D9B21159168E72904F3D /* Pods-SYPopupController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYPopupController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C2F4552CE3B495E78B250C1E7FD8DA6C /* SYPopupController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SYPopupController.m; sourceTree = "<group>"; };
 		C655CA3A4568B71263623E115BD873DA /* Pods-SYPopupController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYPopupController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CC8EEC784382E9477BDD001BF58FA4B0 /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C96251EE326488141529672C94201812 /* SelectPopupCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SelectPopupCell.h; path = SYPopupController/Classes/SelectPopupCell.h; sourceTree = "<group>"; };
 		D10744BDA253246E40C8D79DF0BBAC6F /* Pods-SYPopupController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYPopupController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D946C8B7CBCA93373729CA458161617E /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
+		D42B7EA7E3ECB24763C3BA3FEE7E283C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD699FBAAC84043AEB676A20A27AECF7 /* Pods-SYPopupController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYPopupController_Example-dummy.m"; sourceTree = "<group>"; };
+		DF76520778E5F7625017A3BB321275BE /* MessagePopupCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagePopupCell.h; path = SYPopupController/Classes/MessagePopupCell.h; sourceTree = "<group>"; };
 		E16433804F437DA1F377C34B084859CC /* Pods-SYPopupController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYPopupController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EBE4F25DDD83325E983060DABCBBB5D1 /* MessagePopupCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MessagePopupCell.h; sourceTree = "<group>"; };
-		EC730BA015C027D73CB68437BB2202E7 /* MessagePopupCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MessagePopupCell.m; sourceTree = "<group>"; };
+		E41B886C18D565A91CC07E524CC234EA /* SYPopupController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYPopupController-prefix.pch"; sourceTree = "<group>"; };
+		ED95C9854C5A1E9D1863834AA6302259 /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE65EA6385375BDF66B920CEFFC3387B /* HexColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HexColors.modulemap; sourceTree = "<group>"; };
+		F02E8E0F01AD02BDEE59A27900032305 /* SelectPopupCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SelectPopupCell.m; path = SYPopupController/Classes/SelectPopupCell.m; sourceTree = "<group>"; };
 		F30499C8FDBC2F1F368B133C37C9FE13 /* Pods-SYPopupController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYPopupController_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		FB93F2303B853306B4A25238BE146513 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC4E7618C589DF0ADD82C6EDEC3D8AC5 /* SYPopupController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYPopupController.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		201AE1D2112A71F9E22415A0EFA48580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB13CC1ED007C1AC44530643F7883BB /* Foundation.framework in Frameworks */,
+				890AD4BF248A592D2FA9D11CD366C0BD /* HexColors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BA155DC3466C96A26E2FED0479F99BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,14 +130,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C56E371B9292CB7128F10814B5FB0DF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				870B2234088D350705E1180DBE0863FE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CD67AA7E5C737382902F57D515F55DFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,50 +141,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24CCE3B112B0160A541075F756F31C11 /* Support Files */ = {
+		04DC935C3F51D0E46520DD78439CCA1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C444250C112AE0ABE2B20180F7D0C6C /* Info.plist */,
-				B296EF6ED193760C3BBF77363F9A065E /* SYPopupController.modulemap */,
-				FC4E7618C589DF0ADD82C6EDEC3D8AC5 /* SYPopupController.xcconfig */,
-				1E595F3A08DAF8A812F678385A07ECCB /* SYPopupController-dummy.m */,
-				9FD1E7588B58E930C5C4E95C928600B3 /* SYPopupController-prefix.pch */,
-				A91BB6B06B357D789CCCA33088A67FC1 /* SYPopupController-umbrella.h */,
+				ED95C9854C5A1E9D1863834AA6302259 /* HexColors.framework */,
+				BA7D9119E27C6576FE471ACBB857F9FF /* iOS */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SYPopupController";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		13B5526E2583356FF882F4F29EA572E5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5A6D0EAAB43E7F8C1BAE21FA00AACB9C /* SYPopupController */ = {
-			isa = PBXGroup;
-			children = (
-				24CCE3B112B0160A541075F756F31C11 /* Support Files */,
-				AC5EE9580999ACE2E0C8761F03B01F35 /* SYPopupController */,
-			);
-			name = SYPopupController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		63576997F49219B0C3A81D40187B0D48 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4E553C46940C8122D3F4A9CB32442462 /* HexColors.modulemap */,
-				CC8EEC784382E9477BDD001BF58FA4B0 /* HexColors.xcconfig */,
-				D946C8B7CBCA93373729CA458161617E /* HexColors-dummy.m */,
-				12C34EBCA61D298D1CED29711FB6FC82 /* HexColors-prefix.pch */,
-				53A5E59DFA5A6537C1492E09F7EED969 /* HexColors-umbrella.h */,
-				3DBBEFCE306744B5E840D9E8250320F2 /* Info.plist */,
+				EE65EA6385375BDF66B920CEFFC3387B /* HexColors.modulemap */,
+				8E72368B91FD7AFB84B0E92A6A2D9246 /* HexColors.xcconfig */,
+				83417D5FEABEE8B2B5D09247F928011A /* HexColors-dummy.m */,
+				B748E3FDD88080371A7853C509A0D2E6 /* HexColors-prefix.pch */,
+				7C807A5C7D3DD4D9808B51F45F7363BA /* HexColors-umbrella.h */,
+				891B0450394A34E25AF66916BD439448 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/HexColors";
+			sourceTree = "<group>";
+		};
+		2089F30F724FD5617B70B73101AA9B0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				547B2EF3D7B8C57948C9FEDB73F2EF90 /* HexColors */,
+				C4C536B471D580CF190DC7D51E7FDE3E /* SYPopupController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		547B2EF3D7B8C57948C9FEDB73F2EF90 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				9A1D76FCE995B09DDFA1BC88CC3A846D /* HexColors.h */,
+				A4BC6F0BFCE4EA0453E85722E6030FF7 /* HexColors.m */,
+				13B5526E2583356FF882F4F29EA572E5 /* Support Files */,
+			);
+			path = HexColors;
 			sourceTree = "<group>";
 		};
 		7A49CCCC7720DC347A785B55F263CC31 /* Targets Support Files */ = {
@@ -190,9 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B424EF123CFD01C0030AFF3A3401B26A /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F9A417A795CBB0D3515C1BAEC1225A8D /* Pods */,
+				04DC935C3F51D0E46520DD78439CCA1B /* Frameworks */,
+				2089F30F724FD5617B70B73101AA9B0F /* Pods */,
 				962E9F3CED3C657A2B28FC25CA9238EB /* Products */,
 				7A49CCCC7720DC347A785B55F263CC31 /* Targets Support Files */,
 			);
@@ -209,38 +214,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC5EE9580999ACE2E0C8761F03B01F35 /* SYPopupController */ = {
+		BA7D9119E27C6576FE471ACBB857F9FF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DD41611F9F8E8EFE010577EE7630E85C /* Classes */,
+				0C6738A478FE941B7C80E95ACEB4217A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4C536B471D580CF190DC7D51E7FDE3E /* SYPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				DF76520778E5F7625017A3BB321275BE /* MessagePopupCell.h */,
+				11323E8737F23A2E10A0986E45242F2E /* MessagePopupCell.m */,
+				C96251EE326488141529672C94201812 /* SelectPopupCell.h */,
+				F02E8E0F01AD02BDEE59A27900032305 /* SelectPopupCell.m */,
+				32D4057BA8E38DEED23F3ABE1D658490 /* SYPopupController.h */,
+				1594A40E12712A53EAC4228DD72735F9 /* SYPopupController.m */,
+				C74696DFC21DFAD10B068D3FD0FBD572 /* Support Files */,
 			);
 			path = SYPopupController;
-			sourceTree = "<group>";
-		};
-		B424EF123CFD01C0030AFF3A3401B26A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5A6D0EAAB43E7F8C1BAE21FA00AACB9C /* SYPopupController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B92820B0C9D6131483F9E979A33913E0 /* HexColors */ = {
-			isa = PBXGroup;
-			children = (
-				4BC04C44AD4D4CFA90FB7A875193517A /* HexColors.h */,
-				25C744C065C4619184B9421F410F1F62 /* HexColors.m */,
-				63576997F49219B0C3A81D40187B0D48 /* Support Files */,
-			);
-			path = HexColors;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C57C96B82A620836B2734B84C8315748 /* Pods-SYPopupController_Example */ = {
@@ -261,17 +254,18 @@
 			path = "Target Support Files/Pods-SYPopupController_Example";
 			sourceTree = "<group>";
 		};
-		DD41611F9F8E8EFE010577EE7630E85C /* Classes */ = {
+		C74696DFC21DFAD10B068D3FD0FBD572 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EBE4F25DDD83325E983060DABCBBB5D1 /* MessagePopupCell.h */,
-				EC730BA015C027D73CB68437BB2202E7 /* MessagePopupCell.m */,
-				4B1FC8A1092B9946D7C718378130E6C0 /* SelectPopupCell.h */,
-				60564E8EFE877030355B955DCEDEFF4A /* SelectPopupCell.m */,
-				9EF768A137A28242E557134B371141B5 /* SYPopupController.h */,
-				C2F4552CE3B495E78B250C1E7FD8DA6C /* SYPopupController.m */,
+				D42B7EA7E3ECB24763C3BA3FEE7E283C /* Info.plist */,
+				1D0CAA4C648F6E597F021CD7508C3EF4 /* SYPopupController.modulemap */,
+				39D126E82505FF540D333979B41BD981 /* SYPopupController.xcconfig */,
+				C00D8DEE005BDACA65C8BB837E183FC0 /* SYPopupController-dummy.m */,
+				E41B886C18D565A91CC07E524CC234EA /* SYPopupController-prefix.pch */,
+				209E3371CDD2E25338E5579F9EAE62FD /* SYPopupController-umbrella.h */,
 			);
-			path = Classes;
+			name = "Support Files";
+			path = "../Target Support Files/SYPopupController";
 			sourceTree = "<group>";
 		};
 		DF22D093C2657EC369DCE1B54F7EA20B /* Pods-SYPopupController_Tests */ = {
@@ -292,33 +286,25 @@
 			path = "Target Support Files/Pods-SYPopupController_Tests";
 			sourceTree = "<group>";
 		};
-		F9A417A795CBB0D3515C1BAEC1225A8D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B92820B0C9D6131483F9E979A33913E0 /* HexColors */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		12877D52382DE3E55BBFB22F9928003D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8917A4D36419583D3B3085D8726A8DB2 /* MessagePopupCell.h in Headers */,
+				FE4B74081741F9D4A8F843615A9257FB /* SelectPopupCell.h in Headers */,
+				1B152CA5D2837A0F8834F70855721C07 /* SYPopupController-umbrella.h in Headers */,
+				3B261CBE52B280E1C38D899AD464D39F /* SYPopupController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EA8D403A6584ABBF6C8ED7FCD56590C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				36DEDD073B769EE4881291C8992A94F4 /* Pods-SYPopupController_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		200CA7D0188945B0D981D7605E872AFA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37777F2C3B88E2AB4E2B8E8133E9055B /* MessagePopupCell.h in Headers */,
-				19E25CF573189241AECB6DF2825FD8B9 /* SelectPopupCell.h in Headers */,
-				E60F573007C3DC8D52D4BF2A1E2F5EDC /* SYPopupController-umbrella.h in Headers */,
-				83B99A86A9693FD42245892A0B25B030 /* SYPopupController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,13 +351,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9CE65B63EE9052DE5C7643A2046F981 /* Build configuration list for PBXNativeTarget "SYPopupController" */;
 			buildPhases = (
-				7CBD3BECA1F92F9407D76DC9FA52645E /* Sources */,
-				C56E371B9292CB7128F10814B5FB0DF8 /* Frameworks */,
-				200CA7D0188945B0D981D7605E872AFA /* Headers */,
+				C80D83D0F26F94DFB5EB08EE2F6A2780 /* Sources */,
+				201AE1D2112A71F9E22415A0EFA48580 /* Frameworks */,
+				12877D52382DE3E55BBFB22F9928003D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				976EF50079FDD6CFD0150DF7392FF57F /* PBXTargetDependency */,
 			);
 			name = SYPopupController;
 			productName = SYPopupController;
@@ -467,14 +454,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CBD3BECA1F92F9407D76DC9FA52645E /* Sources */ = {
+		C80D83D0F26F94DFB5EB08EE2F6A2780 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDEB11904F853157FB00D0B3857B20CA /* MessagePopupCell.m in Sources */,
-				AD4C0107EFD6CFBC51EDD393C3D7024E /* SelectPopupCell.m in Sources */,
-				91890474D5ECA39155954648216384BD /* SYPopupController-dummy.m in Sources */,
-				858AF9FCB28937EA49FDA34CBE199DD3 /* SYPopupController.m in Sources */,
+				B2D45FE0F40F9E143615717E6D602C32 /* MessagePopupCell.m in Sources */,
+				8BA6383FF1A196313C447CB74D967ED8 /* SelectPopupCell.m in Sources */,
+				AE86C263C8FB573E35F88C1F2AC962F0 /* SYPopupController-dummy.m in Sources */,
+				DE50F5B36A803289EF41A4874D18186F /* SYPopupController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +474,12 @@
 			target = 96A83A7B368137D1613CCDCE4B77F86B /* SYPopupController */;
 			targetProxy = C02D4B427D9D8E902B1FBBF7D6202C0E /* PBXContainerItemProxy */;
 		};
+		976EF50079FDD6CFD0150DF7392FF57F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HexColors;
+			target = C408D4E183A88B763793C217A66A1950 /* HexColors */;
+			targetProxy = 45E929DEF9A2C7A8FA9D45024931EFE2 /* PBXContainerItemProxy */;
+		};
 		E56D89BE2942BDF889015F89153076A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HexColors;
@@ -496,40 +489,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		38C34BB84A4EADBF25DEF94B4667ED6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86281AADBF71C7814B4D21A5A78E6957 /* Pods-SYPopupController_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SYPopupController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SYPopupController_Example/Pods-SYPopupController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SYPopupController_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3FA2475660FFC880302AD18E29B2E5FC /* Debug */ = {
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -564,16 +524,49 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
+		64C07704B7C8D2CBA917571E8EADC91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86281AADBF71C7814B4D21A5A78E6957 /* Pods-SYPopupController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SYPopupController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYPopupController_Example/Pods-SYPopupController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SYPopupController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		791FABAF4D6D908513DAD627C3FA23FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC4E7618C589DF0ADD82C6EDEC3D8AC5 /* SYPopupController.xcconfig */;
+			baseConfigurationReference = 39D126E82505FF540D333979B41BD981 /* SYPopupController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -600,7 +593,65 @@
 			};
 			name = Debug;
 		};
-		7D182844929DEC396DDBDF8B7BF39446 /* Release */ = {
+		81464A9906D20122059BFC2370AF4F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E72368B91FD7AFB84B0E92A6A2D9246 /* HexColors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HexColors/HexColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HexColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HexColors/HexColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HexColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9373E4DB9FB2A1933DB254D1C6BACD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D126E82505FF540D333979B41BD981 /* SYPopupController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SYPopupController/SYPopupController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SYPopupController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SYPopupController/SYPopupController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SYPopupController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FBCE1EB32A703447DF8FC07652160C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1AEA98E4DA6D9B21159168E72904F3D /* Pods-SYPopupController_Tests.release.xcconfig */;
 			buildSettings = {
@@ -633,36 +684,45 @@
 			};
 			name = Release;
 		};
-		81464A9906D20122059BFC2370AF4F34 /* Debug */ = {
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC8EEC784382E9477BDD001BF58FA4B0 /* HexColors.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HexColors/HexColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HexColors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HexColors/HexColors.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HexColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		82C78BDFC6065C88B64F60D6A7BC9CBD /* Release */ = {
+		B7B64EF3870DC89997B6E6E78BA0FF55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9D01E2264CBCC68F6A3FD4F4B6F1E64 /* Pods-SYPopupController_Example.release.xcconfig */;
 			buildSettings = {
@@ -695,36 +755,7 @@
 			};
 			name = Release;
 		};
-		9373E4DB9FB2A1933DB254D1C6BACD60 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC4E7618C589DF0ADD82C6EDEC3D8AC5 /* SYPopupController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SYPopupController/SYPopupController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SYPopupController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SYPopupController/SYPopupController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SYPopupController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AABF7ED442F4354CED20E1873B42E86E /* Debug */ = {
+		D2A48588A47E3697D9C8ECD83576D101 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C655CA3A4568B71263623E115BD873DA /* Pods-SYPopupController_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -759,7 +790,7 @@
 		};
 		E317D4D51A916C9EB55AC74F47AB1ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC8EEC784382E9477BDD001BF58FA4B0 /* HexColors.xcconfig */;
+			baseConfigurationReference = 8E72368B91FD7AFB84B0E92A6A2D9246 /* HexColors.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -786,44 +817,6 @@
 			};
 			name = Release;
 		};
-		F325026B55060D3B22BEC0BAB5FA7344 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -839,8 +832,8 @@
 		18608B5D4A2D7B3C9DC8F6746E60C8DC /* Build configuration list for PBXNativeTarget "Pods-SYPopupController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38C34BB84A4EADBF25DEF94B4667ED6D /* Debug */,
-				82C78BDFC6065C88B64F60D6A7BC9CBD /* Release */,
+				64C07704B7C8D2CBA917571E8EADC91D /* Debug */,
+				B7B64EF3870DC89997B6E6E78BA0FF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -848,8 +841,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FA2475660FFC880302AD18E29B2E5FC /* Debug */,
-				F325026B55060D3B22BEC0BAB5FA7344 /* Release */,
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -857,8 +850,8 @@
 		CAA6BE7C7B4AAD2F99CD2318B2A6C7C4 /* Build configuration list for PBXNativeTarget "Pods-SYPopupController_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AABF7ED442F4354CED20E1873B42E86E /* Debug */,
-				7D182844929DEC396DDBDF8B7BF39446 /* Release */,
+				D2A48588A47E3697D9C8ECD83576D101 /* Debug */,
+				9FBCE1EB32A703447DF8FC07652160C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
