@@ -8,7 +8,11 @@
 
 #import "SYPopupControllerViewController.h"
 #import <SYPopupController/SYPopupController.h>
-#import <HexColors/HexColors.h>
+
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface SYPopupControllerViewController ()
 
@@ -79,7 +83,7 @@
         paragraphStyle.lineSpacing = 4;
         
         NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14.0f],
-                                     NSForegroundColorAttributeName:[UIColor hx_colorWithHexRGBAString:@"9696A8"],
+                                     NSForegroundColorAttributeName:UIColorFromRGB(0x9696A8),
                                      NSParagraphStyleAttributeName:paragraphStyle};
         NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:tMessage
                                                                                             attributes:attributes];
@@ -94,12 +98,12 @@
                     kBackgroundTapCloseOff:@(YES),
                     kTopBarTitleBottomY:@(YES),
                     kTopBarTextFont:[UIFont boldSystemFontOfSize:18],
-                    kTopBarTextColor:[UIColor hx_colorWithHexRGBAString:@"484760"],
+                    kTopBarTextColor:UIColorFromRGB(0x484760),
                     kTopBarBackgroundColor:[UIColor whiteColor],
                     kMessageAttribute:attributeString,
                     kButtonsViewHeight:@60,
                     kButtonsViewLineColor:[UIColor clearColor],
-                    kButtonsViewBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"897DFF"],
+                    kButtonsViewBackgroundColor:UIColorFromRGB(0x897DFF),
                     kButtonTextColor:[UIColor whiteColor],
                     kButtonTextFont:[UIFont boldSystemFontOfSize:14.0f]};
         
@@ -110,7 +114,7 @@
                       kListData:@[@"QM6",@"쏘렌토",@"아반떼",@"말리부",@"SM6",@"티볼리",@"투싼",@"싼타페",@"e클래스"]};
         
         buttons = @[@"취소",@"완료"];
-        options = @{kTopBarBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"ffd304"]};
+        options = @{kTopBarBackgroundColor:UIColorFromRGB(0xffd304)};
         
     }else if(indexPath.row == 2) {
         
@@ -123,7 +127,7 @@
                     kSelectTextFont:[UIFont systemFontOfSize:18],
                     kButtonsViewBackgroundColor:[UIColor whiteColor],
                     kButtonTextColor:[UIColor brownColor],
-                    kTopBarBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"ffa32e"],
+                    kTopBarBackgroundColor:UIColorFromRGB(0xffa32e),
                     kPopupRadius:@2};
     }else {
         mode = MessageMode;
