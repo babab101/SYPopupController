@@ -20,9 +20,14 @@ static NSString * const kTopBarHeight               = @"TopBarHeight";
 static NSString * const kTopBarBackgroundColor      = @"TopBarBackgroundColor";
 static NSString * const kTopBarTextFont             = @"TopBarTextFont";
 static NSString * const kTopBarTextColor            = @"TopBarTextColor";
+static NSString * const kTopBarTitleBottomY         = @"TopBarTitleBottomY";
+static NSString * const kTopBarTitleAttribute       = @"TopBarTitleAttribute";
 static NSString * const kPopupRadius                = @"PopupRadius";
+static NSString * const kHeaderHeight               = @"HeaderHeight";
+static NSString * const kFooterHeight               = @"FooterHeight";
 static NSString * const kMessageTextFont            = @"MessageTextFont";
 static NSString * const kMessageTextColor           = @"MessageTextColor";
+static NSString * const kMessageAttribute           = @"MessageAttribute";
 static NSString * const kSelectCellHeight           = @"SelectCellHeight";
 static NSString * const kSelectTextFont             = @"SelectTextFont";
 static NSString * const kSelectTextColor            = @"SelectTextColor";
@@ -33,6 +38,7 @@ static NSString * const kButtonsViewBackgroundColor = @"ButtonsViewBackgroundCol
 static NSString * const kButtonsViewLineColor       = @"ButtonsViewLineColor";
 static NSString * const kButtonTextFont             = @"ButtonTextFont";
 static NSString * const kButtonTextColor            = @"ButtonTextColor";
+static NSString * const kBackgroundTapCloseOff      = @"BackgroundTapCloseOff";
 
 typedef NS_ENUM(NSInteger, PopupMode) {
     MessageMode,
