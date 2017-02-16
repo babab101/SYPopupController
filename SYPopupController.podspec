@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SYPopupController'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'SYPopupController is Alert/SelectPopup/MultiSelectPopup.'
 
 # This description is used to generate tags and improve search results.
@@ -41,5 +41,5 @@ Third, Multi Select Popup.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'HexColors'
+  s.dependency 'HexColors', 'FRHyperLabel'
 end
