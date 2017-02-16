@@ -3,7 +3,7 @@ use_frameworks!
 target 'SYPopupController_Example' do
     
   pod 'SYPopupController'
-  pod 'HexColors'
+  pod 'HexColors', '~>4.0.0'
   pod 'FRHyperLabel'
   
   target 'SYPopupController_Tests' do
