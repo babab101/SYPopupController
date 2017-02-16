@@ -9,7 +9,6 @@
 #import "SYPopupController.h"
 #import "MessagePopupCell.h"
 #import "SelectPopupCell.h"
-#import <HexColors/HexColors.h>
 
 #define buttonDefaultTag 10
 #define buttonsViewTopLineTag 123
@@ -20,6 +19,10 @@
 #define DefaultButtonsViewHeight 50
 #define DefaultPopupRadius 8
 #define ScreenBounds [UIScreen mainScreen].bounds
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface SYPopupController ()<UITableViewDelegate, UITableViewDataSource> {
     BOOL isDismiss;
@@ -171,25 +174,25 @@
     containerView.clipsToBounds = YES;
     
     UIView *titleBar = [UIView new];
-    titleBar.backgroundColor = self.options[kTopBarBackgroundColor] ?: [UIColor hx_colorWithHexRGBAString:@"87cc3e"];
+    titleBar.backgroundColor = self.options[kTopBarBackgroundColor] ?: UIColorFromRGB(0x87cc3e);
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectZero];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     UIView *buttonsView = [UIView new];
-    buttonsView.backgroundColor = self.options[kButtonsViewBackgroundColor] ?: [UIColor hx_colorWithHexRGBAString:@"f1f1f1"];
+    buttonsView.backgroundColor = self.options[kButtonsViewBackgroundColor] ?: UIColorFromRGB(0xf1f1f1);
     
     UILabel *titleBarLabel = [[UILabel alloc]initWithFrame:CGRectZero];
     
     NSString *defaultTitleString = self.mode == MessageMode ? @"알림" : @"선택하세요";
     titleBarLabel.text = self.popupTitle ?: defaultTitleString;
     titleBarLabel.font = self.options[kTopBarTextFont] ?: [UIFont boldSystemFontOfSize:16];
-    titleBarLabel.textColor = self.options[kTopBarTextColor] ?: [UIColor hx_colorWithHexRGBAString:@"222222"];
+    titleBarLabel.textColor = self.options[kTopBarTextColor] ?: UIColorFromRGB(0x222222);
     [titleBarLabel sizeToFit];
     
     UIView *buttonsViewLine = [UIView new];
     buttonsViewLine.tag = buttonsViewTopLineTag;
-    buttonsViewLine.backgroundColor = self.options[kButtonsViewLineColor] ?: [UIColor hx_colorWithHexRGBAString:@"e0e0e0"];
+    buttonsViewLine.backgroundColor = self.options[kButtonsViewLineColor] ?: UIColorFromRGB(0xe0e0e0);
     
     [self.view addSubview:backgroundView];
     [self.view addSubview:containerView];
@@ -337,7 +340,7 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.tag = buttonDefaultTag + i;
         [button setTitle:buttonTitle forState:UIControlStateNormal];
-        [button setTitleColor:self.options[kButtonTextColor] ?: [UIColor hx_colorWithHexRGBAString:@"222222"] forState:UIControlStateNormal];
+        [button setTitleColor:self.options[kButtonTextColor] ?: UIColorFromRGB(0x222222) forState:UIControlStateNormal];
         button.titleLabel.font = self.options[kButtonTextFont] ?: [UIFont boldSystemFontOfSize:16];
         if(isVirticalButton)
             button.frame = CGRectMake(0, buttonHeight * i, buttonWidth, buttonHeight);
@@ -350,7 +353,7 @@
             CGPoint buttonPoint = isVirticalButton ?  CGPointMake(0, CGRectGetMaxY(button.frame)) : CGPointMake(CGRectGetMaxX(button.frame), 0);
             CGSize buttonSize = isVirticalButton ? CGSizeMake(buttonWidth, 1) : CGSizeMake(1, buttonHeight);
             UILabel *line = [[UILabel alloc]initWithFrame: CGRectMake(buttonPoint.x, buttonPoint.y, buttonSize.width, buttonSize.height)];
-            line.backgroundColor = self.options[kButtonsViewLineColor] ?: [UIColor hx_colorWithHexRGBAString:@"e0e0e0"];
+            line.backgroundColor = self.options[kButtonsViewLineColor] ?: UIColorFromRGB(0xe0e0e0);
             [self.popupButtonsView addSubview:line];
         }
     }
@@ -425,7 +428,7 @@
             
             NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:self.message
                                                                                                 attributes:@{NSFontAttributeName:self.options[kMessageTextFont] ?: [UIFont boldSystemFontOfSize:16],
-                                                                                                             NSForegroundColorAttributeName:self.options[kMessageTextColor] ?: [UIColor hx_colorWithHexRGBAString:@"222222"],
+                                                                                                             NSForegroundColorAttributeName:self.options[kMessageTextColor] ?: UIColorFromRGB(0x222222),
                                                                                                              NSParagraphStyleAttributeName:paragraphStyle}];
             messageCell.messageLabel.attributedText = attributedString;
         }

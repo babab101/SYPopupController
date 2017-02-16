@@ -7,7 +7,11 @@
 //
 
 #import "SelectPopupCell.h"
-#import <HexColors/HexColors.h>
+
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @implementation SelectPopupCell
 
@@ -25,7 +29,7 @@
         
         UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectZero];
         titleLabel.font = [UIFont boldSystemFontOfSize:15];
-        titleLabel.textColor = [UIColor hx_colorWithHexRGBAString:@"222222"];
+        titleLabel.textColor = UIColorFromRGB(0x222222);
         
         [self.contentView addSubview:checkBox];
         [self.contentView addSubview:titleLabel];

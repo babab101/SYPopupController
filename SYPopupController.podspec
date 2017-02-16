@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SYPopupController'
-  s.version          = '0.2.5'
+  s.version          = '0.2.6'
   s.summary          = 'SYPopupController is Alert/SelectPopup/MultiSelectPopup.'
 
 # This description is used to generate tags and improve search results.
