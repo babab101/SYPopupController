@@ -41,5 +41,6 @@ Third, Multi Select Popup.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'HexColors', 'FRHyperLabel'
+  s.dependency 'HexColors'
+  s.dependency 'FRHyperLabel'
 end
