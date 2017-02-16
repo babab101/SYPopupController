@@ -1,8 +1,10 @@
 use_frameworks!
 
 target 'SYPopupController_Example' do
+    
   pod 'SYPopupController'
   pod 'HexColors'
+  pod 'FRHyperLabel'
   
   target 'SYPopupController_Tests' do
     inherit! :search_paths

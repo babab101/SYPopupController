@@ -1,16 +1,19 @@
 PODS:
+  - FRHyperLabel (1.0.3)
   - HexColors (4.0.0)
   - SYPopupController (0.1.0):
     - HexColors
 
 DEPENDENCIES:
+  - FRHyperLabel
   - HexColors
   - SYPopupController
 
 SPEC CHECKSUMS:
+  FRHyperLabel: 99d08d3667880b4c430071c9afbcb93aaaa34b37
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
   SYPopupController: 564295be92f7b35fb06308722748eb81d5f9e77d
 
-PODFILE CHECKSUM: 120621e4fbc9c89ec04294e9a4fa9a2af3a02ac5
+PODFILE CHECKSUM: 6a7d9ceb70e380118b9f5e841f61966043de6d90
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

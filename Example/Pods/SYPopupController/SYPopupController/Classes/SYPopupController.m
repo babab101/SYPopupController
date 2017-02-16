@@ -117,8 +117,10 @@
     [self.tableView registerClass:[MessagePopupCell class] forCellReuseIdentifier:NSStringFromClass([MessagePopupCell class])];
     [self.tableView registerClass:[SelectPopupCell class] forCellReuseIdentifier:NSStringFromClass([SelectPopupCell class])];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped:)];
-    [self.backgroundView addGestureRecognizer:tap];
+    if(![self.options[kBackgroundTapCloseOff] boolValue]) {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped:)];
+        [self.backgroundView addGestureRecognizer:tap];
+    }
 }
 
 -(void)viewWillLayoutSubviews
@@ -136,7 +138,9 @@
     {
         CGFloat height = 0;
         if(self.mode == MessageMode) {
-            height = [self messageHeight] + (HeaderHeight*2);
+            CGFloat headerHeight = [self.options[kHeaderHeight] floatValue] ?: HeaderHeight;
+            CGFloat footerHeight = [self.options[kFooterHeight] floatValue] ?: headerHeight;
+            height = [self messageHeight] + (headerHeight + footerHeight);
         }else {
             height = ([self.options[kSelectCellHeight] integerValue] ?: DefaultSelectCellHeight) * self.listArray.count + HeaderHeight;
         }
@@ -161,7 +165,7 @@
 -(void)setup
 {
     UIView *backgroundView = [UIView new];
-    backgroundView.backgroundColor = self.options[kPopupBackground] ?: [UIColor colorWithWhite:0.0f alpha:0.75f];
+    backgroundView.backgroundColor = self.options[kPopupBackground] ?: [UIColor colorWithWhite:0.0f alpha:0.4f];
     
     UIView *containerView = [UIView new];
     containerView.clipsToBounds = YES;
@@ -284,11 +288,13 @@
                                                          attribute:NSLayoutAttributeCenterX
                                                         multiplier:1.0f
                                                           constant:0.0f]];
+    
+    BOOL isTitleBottomY = [self.options[kTopBarTitleBottomY] boolValue];
     [titleBar addConstraint:[NSLayoutConstraint constraintWithItem:titleBarLabel
-                                                         attribute:NSLayoutAttributeCenterY
+                                                         attribute:isTitleBottomY ? NSLayoutAttributeBottom : NSLayoutAttributeCenterY
                                                          relatedBy:NSLayoutRelationEqual
                                                             toItem:titleBar
-                                                         attribute:NSLayoutAttributeCenterY
+                                                         attribute:isTitleBottomY ? NSLayoutAttributeBottom : NSLayoutAttributeCenterY
                                                         multiplier:1.0f
                                                           constant:0.0f]];
     
@@ -369,12 +375,15 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return self.mode == MessageMode ? HeaderHeight : HeaderHeight/2;
+    CGFloat height = [self.options[kHeaderHeight] floatValue] ?: HeaderHeight;
+    return self.mode == MessageMode ? height : HeaderHeight/2;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return self.mode == MessageMode ? HeaderHeight : HeaderHeight/2;
+    CGFloat height = [self.options[kHeaderHeight] floatValue] ?: HeaderHeight;
+    height = [self.options[kFooterHeight] floatValue] ?: height;
+    return self.mode == MessageMode ? height : HeaderHeight/2;
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -405,16 +414,21 @@
     if(self.mode == MessageMode)
     {
         MessagePopupCell *messageCell = [[MessagePopupCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([MessagePopupCell class])];
+        messageCell.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-        paragraphStyle.lineSpacing = 10;
-        paragraphStyle.alignment = NSTextAlignmentCenter;
-        
-        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:self.message
-                                                                                            attributes:@{NSFontAttributeName:self.options[kMessageTextFont] ?: [UIFont boldSystemFontOfSize:16],
-                                                                                                         NSForegroundColorAttributeName:self.options[kMessageTextColor] ?: [UIColor hx_colorWithHexRGBAString:@"222222"],
-                                                                                                         NSParagraphStyleAttributeName:paragraphStyle}];
-        messageCell.messageLabel.attributedText = attributedString;
+        if(self.options[kMessageAttribute]) {
+            messageCell.messageLabel.attributedText = self.options[kMessageAttribute];
+        }else {
+            NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+            paragraphStyle.lineSpacing = 10;
+            paragraphStyle.alignment = NSTextAlignmentCenter;
+            
+            NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:self.message
+                                                                                                attributes:@{NSFontAttributeName:self.options[kMessageTextFont] ?: [UIFont boldSystemFontOfSize:16],
+                                                                                                             NSForegroundColorAttributeName:self.options[kMessageTextColor] ?: [UIColor hx_colorWithHexRGBAString:@"222222"],
+                                                                                                             NSParagraphStyleAttributeName:paragraphStyle}];
+            messageCell.messageLabel.attributedText = attributedString;
+        }
         cell = messageCell;
         
     }else
@@ -468,12 +482,18 @@
     paragraphStyle.lineSpacing = 10;
     paragraphStyle.alignment = NSTextAlignmentCenter;
     
+    NSDictionary *attribute = @{NSFontAttributeName:self.options[kMessageTextFont] ?: [UIFont boldSystemFontOfSize:16],
+                                NSParagraphStyleAttributeName:paragraphStyle};
+    if(self.options[kMessageAttribute]) {
+        NSMutableAttributedString *aString = self.options[kMessageAttribute];
+        attribute = [aString attributesAtIndex:0 longestEffectiveRange:nil inRange:NSMakeRange(0, aString.length)];
+    }
+    
     CGFloat leadingAndTraillingPadding = 70;
     CGFloat width = CGRectGetWidth(ScreenBounds) - leadingAndTraillingPadding;
     CGSize sizeOfText = [self.message boundingRectWithSize:CGSizeMake(width, 9999)
                                                    options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
-                                                attributes:@{NSFontAttributeName:self.options[kMessageTextFont] ?: [UIFont boldSystemFontOfSize:16],
-                                                             NSParagraphStyleAttributeName:paragraphStyle}
+                                                attributes:attribute
                                                    context:nil].size;
     return sizeOfText.height+1;
 }

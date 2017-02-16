@@ -65,11 +65,43 @@
     NSArray *buttons;
     
     if(indexPath.row == 0) {
-        mode = MessageMode;
-        popupData = @{kTitle:@"안내",
-                      kMessage:@"결제 취소 가능 시간이 지났습니다.\n담당 교육기관에 문의 후\n취소하시기 바랍니다."};
+        NSString *title = @"알 림 설 정";
+        NSString *message = @"바비톡 특별 이벤트 알림을 놓치지 마세요!\n바비톡 혜택 알림 수신을 통해 회원님께\n딱 맞는 이벤트 알림을 받으실 수 있습니다.";
+        NSString *subMessage = @"\n\n( 바비톡 혜택 알림 수신은 ‘프로필 > 설정’에서 변경 )";
+        NSString *tMessage = [message stringByAppendingString:subMessage];
         
-        buttons = @[@"확인"];
+        mode = MessageMode;
+        popupData = @{kTitle:title,
+                      kMessage:tMessage};
+        
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+        paragraphStyle.alignment = NSTextAlignmentCenter;
+        paragraphStyle.lineSpacing = 4;
+        
+        NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14.0f],
+                                     NSForegroundColorAttributeName:[UIColor hx_colorWithHexRGBAString:@"9696A8"],
+                                     NSParagraphStyleAttributeName:paragraphStyle};
+        NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:tMessage
+                                                                                            attributes:attributes];
+        [attributeString addAttribute:NSFontAttributeName
+                                value:[UIFont systemFontOfSize:13.0f]
+                                range:NSMakeRange(tMessage.length - subMessage.length, subMessage.length)];
+        
+        buttons = @[@"알림 설정하고 혜택받기"];
+        options = @{kPopupRadius:@6,
+                    kHeaderHeight:@10,
+                    kFooterHeight:@20,
+                    kBackgroundTapCloseOff:@(YES),
+                    kTopBarTitleBottomY:@(YES),
+                    kTopBarTextFont:[UIFont boldSystemFontOfSize:18],
+                    kTopBarTextColor:[UIColor hx_colorWithHexRGBAString:@"484760"],
+                    kTopBarBackgroundColor:[UIColor whiteColor],
+                    kMessageAttribute:attributeString,
+                    kButtonsViewHeight:@60,
+                    kButtonsViewLineColor:[UIColor clearColor],
+                    kButtonsViewBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"897DFF"],
+                    kButtonTextColor:[UIColor whiteColor],
+                    kButtonTextFont:[UIFont boldSystemFontOfSize:14.0f]};
         
     }else if(indexPath.row == 1) {
         
